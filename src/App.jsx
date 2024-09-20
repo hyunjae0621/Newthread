@@ -1,19 +1,25 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
 import Login from './pages/Login';
-import Board from "./pages/Board";
+import Home from "./pages/Home";
+import Post from './pages/Post';
+import Profile from "./pages/Profile";
+
 
 
 function App() {
   return (
     
     <div className="bg-stone-900 h-full overflow-auto">
-
+      
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/signin" element={<SignIn />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/board" element={<Board />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/post" element={<Post />} />
+          <Route path="/profile" element={<Profile />} />
+
         </Routes>
       </BrowserRouter>
           
