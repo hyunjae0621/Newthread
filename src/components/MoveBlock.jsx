@@ -51,7 +51,7 @@ const navList = [{
 
 },{
   id : 2,
-  pathname: '/post',
+  pathname: '/postboard',
   icon: <FaRegPenToSquare size={'22px'} />,
   activeIcon: <FaPenToSquare size={'22px'} />,
 
